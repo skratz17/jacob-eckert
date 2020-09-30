@@ -1,5 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap');
+
+:root {
+  --light-background: #fbe8cf;
+  --dark-background: #ffd47d;
+  --action-color: #fc6eb2;
+  --header-color: #716552;
+}
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: 'Playfair Display', serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: normal;
 }
