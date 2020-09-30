@@ -1,3 +1,10 @@
+:root {
+  --light-background: #fbe8cf;
+  --dark-background: #ffd47d;
+  --action-color: #fc6eb2;
+  --header-color: #716552;
+}
+
 * {
   margin: 0;
   padding: 0;
