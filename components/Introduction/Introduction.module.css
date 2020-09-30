@@ -50,3 +50,11 @@
   display: flex;
   justify-content: space-evenly;
 }
+
+.contactIcons a {
+  transition: all 0.25s;
+}
+
+.contactIcons a:hover {
+  transform: scale(1.1);
+}
