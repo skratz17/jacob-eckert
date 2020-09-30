@@ -1,0 +1,31 @@
+.tableOfContents {
+  background-color: var(--light-background);
+  padding: 1rem 3rem;
+}
+
+.header {
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 2.5rem;
+  text-align: center;
+  letter-spacing: 0.1rem;
+}
+
+.tableOfContentsList {
+  margin: 1rem 2rem;
+  list-style-type: none;
+  margin-left: 0;
+}
+
+.tableOfContentsList > li {
+  counter-increment: customlistcounter;
+}
+
+.tableOfContentsList > li:before {
+  content: counter(customlistcounter) " ";
+  font-size: 3.5rem;
+}
+
+.tableOfContentsList:first-child {
+  counter-reset: customlistcounter;
+}
