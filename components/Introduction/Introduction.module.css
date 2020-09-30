@@ -2,6 +2,9 @@
   min-height: 100vh;
   background-color: transparent;
   position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
 }
 
 .introduction::after {
@@ -14,4 +17,29 @@
   background: url('/images/introductionBackground.jpg') center center / cover;
   opacity: 0.7;
   z-index: -1;
+}
+
+.introCard {
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 1.5rem 1rem;
+  font-size: 1.1rem;
+  letter-spacing: 0.05rem;
+  width: 350px;
+  height: 275px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.introCard > h1 {
+  width: 150px;
+  margin: 0 auto;
+  line-height: 1.2;
+  font-size: 3rem;
+}
+
+.introCard > h2 {
+  font-size: 1.25rem;
 }
