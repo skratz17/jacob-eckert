@@ -5,6 +5,7 @@
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
+  align-items: center;
 }
 
 .introduction::after {
@@ -14,7 +15,7 @@
   left: 0;
   height: 100%;
   width: 100%;
-  background: url('/images/introductionBackground.jpg') center center / cover;
+  background: url('/images/introduction/background.jpg') center center / cover;
   opacity: 0.7;
   z-index: -1;
 }
@@ -42,4 +43,10 @@
 
 .introCard > h2 {
   font-size: 1.25rem;
+}
+
+.contactIcons {
+  width: 50%;
+  display: flex;
+  justify-content: space-evenly;
 }
