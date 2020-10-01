@@ -1,5 +1,6 @@
 import ResumeList from '../ResumeList/ResumeList';
 import EXPERIENCE from './experienceConfig';
+import EDUCATION from './educationConfig';
 import styles from './Experience.module.css';
 import utilStyles from '../../styles/utilities.module.css';
 
@@ -10,6 +11,10 @@ const Experience = () => {
       <div>
         <h3 className={styles.resumeListHeader}>Work History</h3>
         <ResumeList roles={EXPERIENCE} />
+      </div>
+      <div>
+        <h3 className={styles.resumeListHeader}>Education</h3>
+        <ResumeList roles={EDUCATION} />
       </div>
     </section>
   );
