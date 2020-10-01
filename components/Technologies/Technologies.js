@@ -10,6 +10,9 @@ const Technologies = () => {
         { TECHNOLOGIES.map(t => (
           <div className={styles.technology}>
             <img src={t.src} alt={t.name} />
+            <div>
+              <p>{t.name}</p>
+            </div>
           </div>
         ))}
       </div>
