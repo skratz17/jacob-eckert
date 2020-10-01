@@ -3,6 +3,7 @@ import Head from 'next/head';
 import Introduction from '../components/Introduction/Introduction';
 import TableOfContents from '../components/TableOfContents/TableOfContents';
 import AboutMe from '../components/AboutMe/AboutMe';
+import Experience from '../components/Experience/Experience';
 
 const Index = () => {
   return (
@@ -15,6 +16,7 @@ const Index = () => {
         <Introduction />
         <TableOfContents />
         <AboutMe />
+        <Experience />
       </main>
     </>
   );

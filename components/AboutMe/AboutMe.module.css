@@ -1,12 +1,11 @@
 .aboutMe {
-  background-color: var(--dark-background);
   display: flex;
   padding: 2rem;
   min-height: 100vh;
 }
 
 .colLeft {
-  flex: 7;
+  flex: 6;
   padding: 0 3rem;
 }
 
@@ -20,5 +19,5 @@
 }
 
 .aboutMeImage {
-  width: 275px;
+  width: 300px;
 }

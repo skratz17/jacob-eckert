@@ -1,0 +1,11 @@
+.experience {
+  padding: 2rem 5rem;
+}
+
+.resumeListHeader {
+  background-color: var(--dark-background);
+  padding: 1rem;
+  font-weight: bold;
+  font-size: 2rem;
+  margin: 2rem 0;
+}
