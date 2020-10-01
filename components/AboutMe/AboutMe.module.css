@@ -1,0 +1,24 @@
+.aboutMe {
+  background-color: var(--dark-background);
+  display: flex;
+  padding: 2rem;
+  min-height: 100vh;
+}
+
+.colLeft {
+  flex: 7;
+  padding: 0 3rem;
+}
+
+.colRight {
+  flex: 1;
+}
+
+.aboutMeText {
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.aboutMeImage {
+  width: 275px;
+}
