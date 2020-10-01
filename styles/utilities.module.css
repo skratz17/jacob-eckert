@@ -5,3 +5,11 @@
   font-size: 9rem;
   font-weight: bold;
 }
+
+.section__dark {
+  background-color: var(--dark-background);
+}
+
+.section__light {
+  background-color: var(--light-background);
+}

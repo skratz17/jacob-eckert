@@ -1,5 +1,4 @@
 .aboutMe {
-  background-color: var(--dark-background);
   display: flex;
   padding: 2rem;
   min-height: 100vh;

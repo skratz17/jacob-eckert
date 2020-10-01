@@ -1,4 +1,5 @@
 import styles from './TableOfContents.module.css';
+import utilStyles from '../../styles/utilities.module.css';
 import TableOfContentsEntry from './TableOfContentsEntry/TableOfContentsEntry';
 
 const TABLE_OF_CONTENTS_ENTRIES = [
@@ -31,7 +32,7 @@ const TABLE_OF_CONTENTS_ENTRIES = [
 
 const TableOfContents = () => {
   return (
-    <section className={styles.tableOfContents}>
+    <section className={styles.tableOfContents + ' ' + utilStyles.section__light}>
       <h2 className={styles.header}>Contents</h2>
       <ol className={styles.tableOfContentsList}>
         { 
