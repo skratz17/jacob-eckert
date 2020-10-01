@@ -4,6 +4,7 @@ import Introduction from '../components/Introduction/Introduction';
 import TableOfContents from '../components/TableOfContents/TableOfContents';
 import AboutMe from '../components/AboutMe/AboutMe';
 import Experience from '../components/Experience/Experience';
+import Projects from '../components/Projects/Projects';
 
 const Index = () => {
   return (
@@ -17,6 +18,7 @@ const Index = () => {
         <TableOfContents />
         <AboutMe />
         <Experience />
+        <Projects />
       </main>
     </>
   );
