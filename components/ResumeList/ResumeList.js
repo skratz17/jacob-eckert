@@ -1,6 +1,15 @@
+import ResumeEntry from './ResumeEntry/ResumeEntry';
+import styles from './ResumeList.module.css';
+
 const ResumeList = props => {
+  const { roles } = props;
+
   return (
-    <div>resume list</div>
+    <ul className={styles.resumeList}>
+      {
+        roles.map(r => <ResumeEntry role={r} />)
+      }
+    </ul>
   )
 };
 
