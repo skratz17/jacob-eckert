@@ -1,3 +1,4 @@
+import EXPERIENCE from './experienceConfig';
 import styles from './Experience.module.css';
 import utilStyles from '../../styles/utilities.module.css';
 
