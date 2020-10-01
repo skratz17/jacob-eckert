@@ -1,0 +1,22 @@
+.projectCard {
+  background-color: var(--light-background);
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.projectCardImage {
+  height: 315px;
+}
+
+.projectCardName {
+  color: var(--action-color);
+  font-size: 2rem;
+  font-weight: bold;
+  margin: 1rem 0;
+}
+
+.projectCardDescription {
+  font-size: 1.25rem;
+}
