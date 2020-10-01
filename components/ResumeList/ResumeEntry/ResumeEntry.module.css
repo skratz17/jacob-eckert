@@ -1,0 +1,49 @@
+.resumeEntry {
+  padding: 1rem;
+  margin: 1rem 0;
+  cursor: pointer;
+}
+
+.resumeEntry:hover {
+  background-color: #fceedd;
+}
+
+.resumeEntryHeadingLine {
+  display: flex;
+  justify-content: space-between;
+}
+
+.resumeEntryHeading {
+  font-size: 2.5rem;
+  color: var(--action-color);
+  font-weight: bold;
+}
+
+.resumeEntrySubheadingLine {
+  display: flex;
+  align-items: flex-end;
+}
+
+.resumeEntryOrganization {
+  font-size: 1.75rem;
+  margin-right: 0.75rem;
+  font-weight: bold;
+}
+
+.resumeEntryLocation {
+  color: #333;
+  font-size: 1.25rem;
+  text-transform: uppercase;
+}
+
+.resumeEntryDetailsList {
+  margin-left: 1.5rem;
+}
+
+.resumeEntryDetailsList > li {
+  margin: 0.5rem 0;
+}
+
+.resumeEntryDetailsList ul {
+  margin-left: 2rem;
+}

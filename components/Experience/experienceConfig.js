@@ -7,7 +7,7 @@ export default [
     details: [
       'Intensive full-time 6-month software development bootcamp centered around modern, full-stack web development. Heavily project-focused, with the majority of the curriculum based around both individual and team-based projects.',
       {
-        subHeading: 'Technologies Studied',
+        subheading: 'Technologies Studied',
         details: [
           'HTML5 and CSS3 to be able to create well-structured, semantic websites with modern styling and layout methods such as flexbox and CSS grid.',
           'git for version control, and GitHub to centrally host repositories for both individual and collaborative projects.',
