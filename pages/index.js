@@ -5,6 +5,7 @@ import TableOfContents from '../components/TableOfContents/TableOfContents';
 import AboutMe from '../components/AboutMe/AboutMe';
 import Experience from '../components/Experience/Experience';
 import Projects from '../components/Projects/Projects';
+import Technologies from '../components/Technologies/Technologies';
 
 const Index = () => {
   return (
@@ -19,6 +20,7 @@ const Index = () => {
         <AboutMe />
         <Experience />
         <Projects />
+        <Technologies />
       </main>
     </>
   );
