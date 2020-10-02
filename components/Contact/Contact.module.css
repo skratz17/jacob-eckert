@@ -1,0 +1,26 @@
+.contact {
+  padding: 2rem 5rem;
+}
+
+.contactMethod {
+  background-color: var(--light-background);
+  text-align: center;
+  padding: 1.5rem 0;
+  font-size: 2.5rem;
+  position: relative;
+  margin-top: 2rem;
+}
+
+.contactMethod > div {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translate(-50%, -50%);
+}
+
+.contactMethod a,
+.contactMethod p {
+  color: #000;
+  text-decoration: none;
+  width: 100%;
+}
