@@ -24,3 +24,22 @@
   text-decoration: none;
   width: 100%;
 }
+
+.externalLinks {
+  width: 50%;
+  margin: 2rem auto;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.externalLinks a {
+  transition: all 0.25s;
+}
+
+.externalLinks div {
+  background-color: #fff;
+}
+
+.externalLinks a:hover {
+  transform: scale(1.1);
+}
