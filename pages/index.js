@@ -7,6 +7,7 @@ import Experience from '../components/Experience/Experience';
 import Projects from '../components/Projects/Projects';
 import Technologies from '../components/Technologies/Technologies';
 import Contact from '../components/Contact/Contact';
+import Footer from '../components/Footer/Footer';
 
 const Index = () => {
   return (
@@ -24,6 +25,8 @@ const Index = () => {
         <Technologies />
         <Contact />
       </main>
+
+      <Footer />
     </>
   );
 };
