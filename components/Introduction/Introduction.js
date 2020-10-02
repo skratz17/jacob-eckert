@@ -4,17 +4,17 @@ import styles from './Introduction.module.css';
 const CONTACT_LINKS = [
   { 
     href: 'https://www.linkedin.com/in/jacob-w-eckert/', 
-    src: '/images/icons/linkedIn.png', 
+    src: '/images/contact/linkedIn.png', 
     alt: 'LinkedIn' 
   },
   { 
     href: 'https://github.com/skratz17/',
-    src: '/images/icons/github.png', 
+    src: '/images/contact/github.png', 
     alt: 'GitHub' 
   },
   { 
     href: 'mailto:jweckert17@gmail.com',
-    src: '/images/icons/email.png', 
+    src: '/images/contact/email.png', 
     alt: 'E-mail' 
   }
 ];
