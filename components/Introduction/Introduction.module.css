@@ -58,3 +58,25 @@
 .contactIcons a:hover {
   transform: scale(1.1);
 }
+
+@media(max-width: 500px) {
+  .introCard {
+    height: 250px;
+  }
+
+  .introduction > div:nth-child(2), 
+  .introduction > div:nth-child(2) img {
+    width: 150px !important;
+    height: 150px !important;
+  }
+
+  .contactIcons {
+    width: 80%;
+  }
+
+  .introduction > div:nth-child(3) div, 
+  .introduction > div:nth-child(3) img {
+    width: 55px !important;
+    height: 55px !important;
+  }
+}
