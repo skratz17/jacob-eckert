@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react';
 
 import TableOfContentsEntry from '../TableOfContentsEntry/TableOfContentsEntry';
 import TABLE_OF_CONTENTS_ENTRIES from '../tableOfContentsConfig';
+import styles from './TableOfContentsMenu.module.css';
 
 const scrollLocations = {};
 TABLE_OF_CONTENTS_ENTRIES.forEach(t => scrollLocations[t.href] = null);
@@ -39,7 +40,6 @@ const TableOfContentsMenu = props => {
     Object.keys(scrollLocations).forEach(sectionHref => {
       scrollLocations[sectionHref] = document.querySelector(sectionHref).getBoundingClientRect().top + curScroll
     });
-    handleScroll();
   };
 
   const handleScroll = () => {
@@ -67,9 +67,12 @@ const TableOfContentsMenu = props => {
     props.onNavigate(event);
   };
 
+  let menuContent;
+
   if(activeItem && isExpanded) {
-    return (
-      <nav style={{ position: 'fixed', top: 0, left: 0 }}>
+    menuContent = (
+      <nav>
+        <button onClick={() => setIsExpanded(false)}>Close Menu</button>
         <ul>
           {
             TABLE_OF_CONTENTS_ENTRIES.map(t => (
@@ -82,16 +85,26 @@ const TableOfContentsMenu = props => {
   }
 
   else if(activeItem) {
-    return (
-      <button style={{ position: 'fixed', top: 0, left: 0 }} onClick={() => setIsExpanded(true)}>
-        Chapter { TABLE_OF_CONTENTS_ENTRIES.findIndex(t => t.href === activeItem) + 1 }
+    const chapterIndex = TABLE_OF_CONTENTS_ENTRIES.findIndex(t => t.href === activeItem);
+
+    menuContent = (
+      <button className={styles.menuExpandButton} onClick={() => setIsExpanded(true)}>
+        <i className="material-icons">import_contacts</i>
+        <span className={styles.chapterTitle}>
+          Chapter { chapterIndex + 1 }: { TABLE_OF_CONTENTS_ENTRIES[chapterIndex].linkText }
+        </span>
       </button>
-    )
+    );
   }
 
-  else {
-    return <></>;
-  }
+  const classNames = [ styles.menuWrapper ];
+  if(!activeItem) classNames.push(styles.hidden);
+
+  return (
+    <div className={classNames.join(' ')}>
+      { menuContent }
+    </div>
+  )
 };
 
 export default TableOfContentsMenu;
