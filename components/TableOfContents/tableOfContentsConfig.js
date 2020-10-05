@@ -2,26 +2,26 @@ export default [
   {
     href: '#about',
     linkText: 'About Me',
-    description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquid necessitatibus in quidem ducimus officiis nemo eum eveniet, inventore delectus laborum quos voluptatum quam obcaecati quis similique corrupti qui mollitia. Dignissimos!'
+    description: 'Get to know me a little bit! Find out what got me interested in software development in the first place, and what keeps me motivated to continue bettering myself. Learn a bit more about my interests outside of the world of software, as well!'
   },
   {
     href: '#experience',
     linkText: 'Experience & Education',
-    description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique eaque nostrum aspernatur delectus, consectetur, eveniet suscipit earum non sapiente, impedit corporis necessitatibus ducimus magnam illo fuga qui laboriosam. Est, debitis?'
+    description: 'Check out my work and education history! Find out what I\'ve been up to professionally throughout my life, as well as where I learned the skills that I have been able to put to use every day across various job roles and personal projects.'
   },
   {
     href: '#projects',
     linkText: 'Projects',
-    description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat iusto tempora, quas exercitationem fuga aperiam omnis blanditiis quibusdam consectetur quisquam, enim reiciendis eum mollitia ab voluptates? A maiores officiis dolorem!'
+    description: 'See some of the projects that I have made for the web platform! Get to know a bit about the problems I aimed to solve with each project, the technologies I employed to solve those problems, and check out the finished products for yourself.'
   },
   {
     href: '#technologies',
     linkText: 'Technologies',
-    description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit vel ipsum hic quaerat inventore est cum, blanditiis magni accusamus veritatis corrupti corporis, sapiente quo temporibus voluptas labore aliquam aperiam sint?'
+    description: 'Take a look at the technologies that I have a strong amount of experience working with. Go here if you want to find out whether or not I know React (spoiler - I do), or if I am a master of COBOL (uhmmmm, let\'s just say not yet?).'
   },
   {
     href: '#contact',
     linkText: 'Contact',
-    description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime, sunt ad sed adipisci aliquam itaque reiciendis animi odio vitae eum sequi repellat commodi. Qui pariatur dolorem aliquam et nisi totam!'
+    description: 'Interested in talking with me? Awesome! Use my contact information in this section to shoot me an email, give me a call, or ping me on LinkedIn - I\'d love to chat!'
   }
 ];
