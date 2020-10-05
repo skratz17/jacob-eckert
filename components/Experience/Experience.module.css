@@ -10,7 +10,7 @@
   margin: 2rem 0;
 }
 
-@media(max-width: 768px) {
+@media(max-width: 500px) {
   .experience {
     padding: 2rem;
   }

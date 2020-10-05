@@ -37,7 +37,7 @@
   text-align: center;
 }
 
-@media(max-width: 768px) {
+@media(max-width: 500px) {
   .technologies {
     padding: 2rem;
   }
