@@ -9,6 +9,7 @@ TABLE_OF_CONTENTS_ENTRIES.forEach(t => scrollLocations[t.href] = null);
 const TableOfContentsMenu = props => {
   const [ activeItem, setActiveItem ] = useState(null);
   const [ scrollPos, setScrollPos ] = useState(0);
+  const [ isExpanded, setIsExpanded ] = useState(false);
 
   useEffect(() => {
     // mutation observer to update scroll locations on mutations that change scroll positions of elements on the page (e.g., expanding a resume list item)
@@ -34,7 +35,7 @@ const TableOfContentsMenu = props => {
 
   // build object mapping section hash links to the scroll position of that section on the page
   const getAnchorPoints = () => {
-    const curScroll = window.scrollY;
+    const curScroll = window.scrollY - 25;
     Object.keys(scrollLocations).forEach(sectionHref => {
       scrollLocations[sectionHref] = document.querySelector(sectionHref).getBoundingClientRect().top + curScroll
     });
@@ -59,20 +60,33 @@ const TableOfContentsMenu = props => {
     if(curSection !== activeItem) {
       setActiveItem(curSection);
     }
-  }
+  };
 
-  if(activeItem) {
+  const handleNavigation = event => {
+    setIsExpanded(false);
+    props.onNavigate(event);
+  };
+
+  if(activeItem && isExpanded) {
     return (
       <nav style={{ position: 'fixed', top: 0, left: 0 }}>
         <ul>
           {
             TABLE_OF_CONTENTS_ENTRIES.map(t => (
-              <TableOfContentsEntry onClick={props.onNavigate} key={t.href} href={t.href} linkText={t.linkText} />
+              <TableOfContentsEntry onClick={handleNavigation} key={t.href} href={t.href} linkText={t.linkText} />
             )) 
           }
         </ul>
       </nav>
     );
+  }
+
+  else if(activeItem) {
+    return (
+      <button style={{ position: 'fixed', top: 0, left: 0 }} onClick={() => setIsExpanded(true)}>
+        Chapter { TABLE_OF_CONTENTS_ENTRIES.findIndex(t => t.href === activeItem) + 1 }
+      </button>
+    )
   }
 
   else {
