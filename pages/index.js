@@ -10,6 +10,12 @@ import Contact from '../components/Contact/Contact';
 import Footer from '../components/Footer/Footer';
 
 const Index = () => {
+  const handleNavigation = event => {
+    event.preventDefault();
+    const element = document.querySelector(event.target.hash);
+    element.scrollIntoView({ behavior: 'smooth', block: 'start' });
+  };
+
   return (
     <>
       <Head>
@@ -18,7 +24,7 @@ const Index = () => {
 
       <main>
         <Introduction />
-        <TableOfContents />
+        <TableOfContents onNavigate={handleNavigation} />
         <AboutMe />
         <Experience />
         <Projects />

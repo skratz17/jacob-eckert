@@ -30,14 +30,14 @@ const TABLE_OF_CONTENTS_ENTRIES = [
   }
 ];
 
-const TableOfContents = () => {
+const TableOfContents = props => {
   return (
     <section className={styles.tableOfContents + ' ' + utilStyles.section__light}>
       <h2 className={styles.header}>Contents</h2>
       <ol className={styles.tableOfContentsList}>
         { 
           TABLE_OF_CONTENTS_ENTRIES.map(t => (
-            <TableOfContentsEntry key={t.href} href={t.href} linkText={t.linkText}>
+            <TableOfContentsEntry onClick={props.onNavigate} key={t.href} href={t.href} linkText={t.linkText}>
               {t.description}
             </TableOfContentsEntry>
           )) 

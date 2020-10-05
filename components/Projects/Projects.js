@@ -5,7 +5,7 @@ import utilStyles from '../../styles/utilities.module.css';
 
 const Projects = () => {
   return (
-    <section className={styles.projects + ' ' + utilStyles.section__dark}>
+    <section className={styles.projects + ' ' + utilStyles.section__dark} id="projects">
       <h2 className={utilStyles.sectionHeading}>Projects</h2>
       <div className={styles.projectsGrid}>
         { PROJECTS.map(p => <ProjectCard project={p} />) }
