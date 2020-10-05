@@ -19,6 +19,10 @@
   text-decoration: none;
 }
 
+.tableOfContentsEntry a:hover {
+  text-decoration: underline;
+}
+
 .tableOfContentsEntry p {
   font-size: 1.2rem;
 }
