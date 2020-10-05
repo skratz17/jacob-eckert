@@ -28,3 +28,14 @@
 .tableOfContentsList:first-child {
   counter-reset: customlistcounter;
 }
+
+@media(max-width: 500px) {
+  .tableOfContents {
+    padding: 1rem;
+  }
+
+  .tableOfContentsList > li:before {
+    margin-right: 1rem;
+    font-size: 2rem;
+  }
+}

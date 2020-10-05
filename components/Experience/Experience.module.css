@@ -9,3 +9,14 @@
   font-size: 2rem;
   margin: 2rem 0;
 }
+
+@media(max-width: 500px) {
+  .experience {
+    padding: 2rem;
+  }
+
+  .resumeListHeader {
+    font-size: 1.25rem;
+    margin: 1rem 0;
+  }
+}

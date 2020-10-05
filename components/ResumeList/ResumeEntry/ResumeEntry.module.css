@@ -47,3 +47,50 @@
 .resumeEntryDetailsList ul {
   margin-left: 2rem;
 }
+
+@media(max-width: 500px) {
+  .resumeEntry {
+    padding: 0;
+  }
+
+  .resumeEntry::after {
+    content: '';
+    display: block;
+    width: 75%;
+    margin: 1rem auto;
+    border: 1px dotted #0009;
+  }
+
+  .resumeEntry:last-child::after {
+    display: none;
+  }
+
+  .resumeEntry:hover {
+    background-color: transparent;
+  }
+
+  .resumeEntryHeadingLine {
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .resumeEntryHeading {
+    font-size: 1.5rem;
+    flex: 3;
+  }
+
+  .resumeEntrySubheadingLine {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .resumeEntryOrganization {
+    font-size: 1.25rem;
+  }
+
+  .resumeEntryLocation {
+    font-size: 1rem;
+  }
+}

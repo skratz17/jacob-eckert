@@ -2,3 +2,9 @@
   list-style-type: none;
   font-size: 1.5rem;
 }
+
+@media(max-width: 500px) {
+  .resumeList {
+    font-size: 1rem;
+  }
+}

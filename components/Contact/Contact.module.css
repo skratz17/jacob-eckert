@@ -43,3 +43,30 @@
 .externalLinks a:hover {
   transform: scale(1.1);
 }
+
+@media(max-width: 500px) {
+  .contact {
+    padding: 2rem 2rem 2rem 3rem;
+  }
+
+  .contactMethod {
+    font-size: 1.15rem;
+  }
+
+  .externalLinks {
+    width: 80%;
+    margin-bottom: 0;
+  }
+
+  .contactMethod > div,
+  .contactMethod > div img {
+    width: 55px !important;
+    height: 55px !important;
+  }
+
+  .externalLinks div, 
+  .externalLinks img {
+    width: 70px !important;
+    height: 70px !important;
+  }
+}
