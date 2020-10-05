@@ -15,6 +15,12 @@
   background-color: var(--light-background);
 }
 
+@media(max-width: 850px) {
+  .sectionHeading {
+    font-size: 4.5rem;
+  }
+}
+
 @media(max-width: 500px) {
   .sectionHeading {
     font-size: 3rem;
