@@ -40,3 +40,9 @@
   background-color: #fff9;
   cursor: pointer;
 }
+
+@media(max-width: 768px) {
+  .menuExpandButton:hover .chapterTitle {
+    display: none;
+  }
+}
