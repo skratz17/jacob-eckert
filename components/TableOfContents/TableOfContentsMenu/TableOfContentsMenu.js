@@ -1,8 +1,10 @@
 import { useState, useEffect } from 'react';
+import smoothscroll from 'smoothscroll-polyfill';
 
 import TableOfContentsEntry from '../TableOfContentsEntry/TableOfContentsEntry';
 import TABLE_OF_CONTENTS_ENTRIES from '../tableOfContentsConfig';
 import styles from './TableOfContentsMenu.module.css';
+
 
 const scrollLocations = {};
 TABLE_OF_CONTENTS_ENTRIES.forEach(t => scrollLocations[t.href] = null);
@@ -13,6 +15,8 @@ const TableOfContentsMenu = props => {
   const [ isExpanded, setIsExpanded ] = useState(false);
 
   useEffect(() => {
+    smoothscroll.polyfill();
+
     // mutation observer to update scroll locations on mutations that change scroll positions of elements on the page (e.g., expanding a resume list item)
     const observer = new MutationObserver(getAnchorPoints);
     observer.observe(document.querySelector('#main'), {
