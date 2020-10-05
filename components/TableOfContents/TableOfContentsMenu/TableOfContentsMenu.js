@@ -11,6 +11,7 @@ const TableOfContentsMenu = props => {
   const [ scrollPos, setScrollPos ] = useState(0);
 
   useEffect(() => {
+    // mutation observer to update scroll locations on mutations that change scroll positions of elements on the page (e.g., expanding a resume list item)
     const observer = new MutationObserver(getAnchorPoints);
     observer.observe(document.querySelector('#main'), {
       childList: true,
@@ -18,15 +19,20 @@ const TableOfContentsMenu = props => {
     });
     getAnchorPoints();
 
+    // resize listener to update scroll locations when user resizes the browser window 
+    window.addEventListener('resize', getAnchorPoints);
+
     window.addEventListener('scroll', handleScroll);
   }, []);
 
+  // debounce the scroll event, only fire section update logic after scrolling stops for 100ms
   useEffect(() => {
     const timeoutId = setTimeout(handleScrollSectionUpdate, 100);
 
     return () => clearTimeout(timeoutId);
   }, [ scrollPos ]);
 
+  // build object mapping section hash links to the scroll position of that section on the page
   const getAnchorPoints = () => {
     const curScroll = window.scrollY;
     Object.keys(scrollLocations).forEach(sectionHref => {
