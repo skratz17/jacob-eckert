@@ -9,3 +9,9 @@
   font-size: 2rem;
   margin: 2rem 0;
 }
+
+@media(max-width: 768px) {
+  .experience {
+    padding: 2rem;
+  }
+}

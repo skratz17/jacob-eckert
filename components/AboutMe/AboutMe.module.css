@@ -21,3 +21,19 @@
 .aboutMeImage {
   width: 300px;
 }
+
+@media(max-width: 768px) {
+  .aboutMe {
+    padding: 2rem;
+    min-height: 100%;
+    height: 100%;
+  }
+
+  .colLeft {
+    padding: 0;
+  }
+
+  .colRight {
+    display: none;
+  }
+}

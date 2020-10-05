@@ -14,3 +14,9 @@
 .section__light {
   background-color: var(--light-background);
 }
+
+@media(max-width: 768px) {
+  .sectionHeading {
+    font-size: 4rem;
+  }
+}

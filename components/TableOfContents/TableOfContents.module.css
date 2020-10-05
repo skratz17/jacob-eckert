@@ -28,3 +28,9 @@
 .tableOfContentsList:first-child {
   counter-reset: customlistcounter;
 }
+
+@media(max-width: 768px) {
+  .tableOfContents {
+    padding: 2rem;
+  }
+}
