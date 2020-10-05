@@ -14,4 +14,9 @@
   .experience {
     padding: 2rem;
   }
+
+  .resumeListHeader {
+    font-size: 1.25rem;
+    margin: 1rem 0;
+  }
 }

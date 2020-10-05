@@ -41,4 +41,12 @@
   .technologies {
     padding: 2rem;
   }
+
+  .technologiesGrid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .technology > div {
+    font-size: 0.75rem;
+  }
 }
