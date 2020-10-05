@@ -29,6 +29,10 @@
     height: 100%;
   }
 
+  .aboutMeText {
+    font-size: 1.15rem;
+  }
+
   .colLeft {
     padding: 0;
   }

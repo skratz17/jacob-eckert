@@ -31,6 +31,11 @@
 
 @media(max-width: 500px) {
   .tableOfContents {
-    padding: 2rem;
+    padding: 1rem;
+  }
+
+  .tableOfContentsList > li:before {
+    margin-right: 1rem;
+    font-size: 2rem;
   }
 }

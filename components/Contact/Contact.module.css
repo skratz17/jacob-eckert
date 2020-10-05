@@ -53,9 +53,20 @@
     font-size: 1.15rem;
   }
 
+  .externalLinks {
+    width: 80%;
+    margin-bottom: 0;
+  }
+
   .contactMethod > div,
   .contactMethod > div img {
     width: 55px !important;
     height: 55px !important;
+  }
+
+  .externalLinks div, 
+  .externalLinks img {
+    width: 70px !important;
+    height: 70px !important;
   }
 }
