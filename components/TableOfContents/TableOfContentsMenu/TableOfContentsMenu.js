@@ -71,7 +71,7 @@ const TableOfContentsMenu = props => {
 
   if(activeItem && isExpanded) {
     menuContent = (
-      <nav>
+      <nav className={styles.menuNav}>
         <button onClick={() => setIsExpanded(false)}>Close Menu</button>
         <ul>
           {
@@ -84,27 +84,25 @@ const TableOfContentsMenu = props => {
     );
   }
 
-  else if(activeItem) {
-    const chapterIndex = TABLE_OF_CONTENTS_ENTRIES.findIndex(t => t.href === activeItem);
+  else {
+    let chapterIndex = TABLE_OF_CONTENTS_ENTRIES.findIndex(t => t.href === activeItem);
+    if(chapterIndex === undefined) chapterIndex = -1;
+    const linkText = chapterIndex > -1 ? TABLE_OF_CONTENTS_ENTRIES[chapterIndex].linkText : '';
+
+    const classNames = [ styles.menuExpandButton ];
+    if(!activeItem) classNames.push(styles.hidden);
 
     menuContent = (
-      <button className={styles.menuExpandButton} onClick={() => setIsExpanded(true)}>
+      <button className={classNames.join(' ')} onClick={() => setIsExpanded(true)}>
         <i className="material-icons">import_contacts</i>
         <span className={styles.chapterTitle}>
-          Chapter { chapterIndex + 1 }: { TABLE_OF_CONTENTS_ENTRIES[chapterIndex].linkText }
+          Chapter { chapterIndex + 1 }: { linkText }
         </span>
       </button>
     );
   }
 
-  const classNames = [ styles.menuWrapper ];
-  if(!activeItem) classNames.push(styles.hidden);
-
-  return (
-    <div className={classNames.join(' ')}>
-      { menuContent }
-    </div>
-  )
+  return menuContent;
 };
 
 export default TableOfContentsMenu;
