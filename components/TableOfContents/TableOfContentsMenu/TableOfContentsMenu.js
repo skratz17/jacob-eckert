@@ -71,8 +71,10 @@ const TableOfContentsMenu = props => {
 
   if(activeItem && isExpanded) {
     menuContent = (
-      <nav className={styles.menuNav}>
-        <button onClick={() => setIsExpanded(false)}>Close Menu</button>
+      <nav className={styles.fixedMenu + ' ' + styles.menuNav}>
+        <button className={styles.closeMenuButton} onClick={() => setIsExpanded(false)}>
+          <i className="material-icons">highlight_off</i>
+        </button>
         <ul>
           {
             TABLE_OF_CONTENTS_ENTRIES.map(t => (
@@ -89,7 +91,7 @@ const TableOfContentsMenu = props => {
     if(chapterIndex === undefined) chapterIndex = -1;
     const linkText = chapterIndex > -1 ? TABLE_OF_CONTENTS_ENTRIES[chapterIndex].linkText : '';
 
-    const classNames = [ styles.menuExpandButton ];
+    const classNames = [ styles.fixedMenu, styles.menuExpandButton ];
     if(!activeItem) classNames.push(styles.hidden);
 
     menuContent = (

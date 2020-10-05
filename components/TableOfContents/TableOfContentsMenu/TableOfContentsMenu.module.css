@@ -1,15 +1,18 @@
-.menuExpandButton {  
+.fixedMenu {
   position: fixed;
   top: 0;
   left: 0;
   background-color: #0009;
+  z-index: 5;
+  padding: 1rem;
+}
+
+.menuExpandButton {  
   border: none;
   color: #fff;
-  padding: 1rem;
   cursor: pointer;
   font-size: 2rem;
   font-style: italic;
-  z-index: 5;
   opacity: 1;
   transition: all 0.5s;
 }
@@ -28,9 +31,12 @@
   margin-left: 0.5rem;
 }
 
-.menuNav {
-  position: fixed;
-  top: 0;
-  left: 0;
-  background-color: #0009;
+.closeMenuButton {
+  display: flex;
+  align-items: center;
+  border: none;
+  border-radius: 5px;
+  padding: 0.5rem;
+  background-color: #fff9;
+  cursor: pointer;
 }
