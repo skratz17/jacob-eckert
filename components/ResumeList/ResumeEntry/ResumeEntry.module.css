@@ -17,6 +17,7 @@
   font-size: 2.5rem;
   color: var(--action-color);
   font-weight: bold;
+  max-width: 75%
 }
 
 .resumeEntrySubheadingLine {
@@ -28,6 +29,7 @@
   font-size: 1.75rem;
   margin-right: 0.75rem;
   font-weight: bold;
+  max-width: 65%;
 }
 
 .resumeEntryLocation {
@@ -46,6 +48,24 @@
 
 .resumeEntryDetailsList ul {
   margin-left: 2rem;
+}
+
+@media(max-width: 850px) {
+  .resumeEntryHeading {
+    font-size: 2rem; 
+  }
+
+  .resumeEntryOrganization {
+    font-size: 1.25rem;
+  }
+
+  .resumeEntryLocation {
+    font-size: 1rem;
+  }
+
+  .resumeEntryDetailsList {
+    font-size: 1.25rem;
+  }
 }
 
 @media(max-width: 500px) {

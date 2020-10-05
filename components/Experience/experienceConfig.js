@@ -46,8 +46,8 @@ export default [
   },
 
   {
-    position: 'Web Developer / Technical Support Staff (Part Time)',
-    organization: 'Emory University Department of Math and Computer Science',
+    position: 'Web Developer / Technical Support Staff (Part-Time)',
+    organization: 'Emory University',
     location: 'Atlanta, GA',
     start: '2014',
     end: '2016',
@@ -58,7 +58,7 @@ export default [
   },
 
   {
-    position: 'Store Clerk (Part Time)',
+    position: 'Store Clerk (Part-Time)',
     organization: 'Grimey\'s New and Preloved Music',
     location: 'Nashville, TN',
     start: '2009',
