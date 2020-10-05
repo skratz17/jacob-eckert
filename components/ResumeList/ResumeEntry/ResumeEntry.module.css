@@ -92,6 +92,7 @@
   .resumeEntryHeadingLine {
     flex-direction: column;
     justify-content: center;
+    align-items: center;
     text-align: center;
   }
 
@@ -112,5 +113,9 @@
 
   .resumeEntryLocation {
     font-size: 1rem;
+  }
+
+  .resumeEntryDetailsList {
+    font-size: 1.1rem;
   }
 }
