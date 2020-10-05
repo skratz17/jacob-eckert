@@ -6,7 +6,7 @@ import utilStyles from '../../styles/utilities.module.css';
 
 const Experience = () => {
   return (
-    <section className={styles.experience + ' ' + utilStyles.section__light}>
+    <section className={styles.experience + ' ' + utilStyles.section__light} id="experience">
       <h2 className={styles.sectionHeading + ' ' + utilStyles.sectionHeading}>Experience &amp; Education</h2>
       <div>
         <h3 className={styles.resumeListHeader}>Work History</h3>

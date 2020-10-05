@@ -17,7 +17,7 @@ const EXTERNAL_LINKS = [
 
 const Contact = () => {
   return (
-    <section className={styles.contact + ' ' + utilStyles.section__dark}>
+    <section className={styles.contact + ' ' + utilStyles.section__dark} id="contact">
       <h2 className={utilStyles.sectionHeading}>Contact Me</h2>
 
       <div className={styles.contactMethod}>
