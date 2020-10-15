@@ -6,16 +6,47 @@
   left: 50%;
   transform: translate(-50%, -50%);
   padding: 2rem;
+  padding-top: 1rem;
   border: 1px solid #0002;
   background-color: #fff;
   z-index: 10;
-  max-height: 80vh;
+  max-height: 90vh;
   overflow: scroll;
 }
 
 .modal.showing {
   visibility: visible;
   opacity: 1;
+}
+
+.closeButton {
+  background: #fff;
+  border: none;
+  display: block;
+  margin-left: auto;
+  cursor: pointer;
+}
+
+.closeButton > i {
+  font-size: 2.5rem;
+}
+
+.closeButtonMobile {
+  display: none;
+}
+
+@media(max-width: 768px) {
+  .closeButton {
+    display: none;
+  }
+
+  .closeButtonMobile {
+    display: block;
+    margin: 1rem auto;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    font-size: 1rem;
+  }
 }
 
 @media(max-width: 500px) {
