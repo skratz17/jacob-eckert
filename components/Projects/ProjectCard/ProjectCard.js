@@ -10,11 +10,21 @@ const ProjectCard = props => {
     onSelect(name);
   };
 
+  const handleKeyUp = (e, name) => {
+    if(e.key === 'Enter') {
+      handleProjectLinkClick(e, name);
+    }
+  };
+
   return (
     <div className={styles.projectCard}>
       <img className={styles.projectCardImage} src={mainImage.src} alt={mainImage.alt} />
       <h3 className={styles.projectCardName}>
-        <a onClick={e => handleProjectLinkClick(e, name)}>{name}</a>
+        <a tabIndex="0" 
+          onClick={e => handleProjectLinkClick(e, name)} 
+          onKeyUp={e => handleKeyUp(e, name)}>
+            {name}
+        </a>
       </h3>
       <p className={styles.projectCardDescription}>{shortDescription}</p>
     </div>
