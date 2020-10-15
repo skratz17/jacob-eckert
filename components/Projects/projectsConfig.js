@@ -1,5 +1,6 @@
 export default [
   {
+    // UHHH WUT PROJECT
     name: 'uhhh wut',
     images: [
       {
@@ -53,6 +54,8 @@ export default [
     deployedLink: 'https://uhhhwut.onrender.com/',
     projectLink: 'https://github.com/skratz17/uhhhwut'
   },
+
+  // CYNTHIA CHEATHAM LAW PROJECT
   {
     name: 'Cynthia Cheatham Law',
     images: [
