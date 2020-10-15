@@ -22,9 +22,17 @@ const ImageSlider = props => {
     return () => document.removeEventListener('keydown', handleKeyPress);
   }, [activeImageIndex]);
 
-  const renderControls = () => {
-    const prevClassNames = [ styles.button, styles.buttonPrev ];
-    const nextClassNames = [ styles.button, styles.buttonNext ];
+  const handleClick = (e, increment) => {
+    e.preventDefault();
+    setActiveImageIndex(prevIndex => prevIndex + increment);
+  };
+
+  const renderControls = (isMobile = false) => {
+    const prevClassNames = [ styles.buttonPrev ];
+    const nextClassNames = [ styles.buttonNext ];
+
+    prevClassNames.push(isMobile ? styles.buttonMobile : styles.button);
+    nextClassNames.push(isMobile ? styles.buttonMobile : styles.button);
 
     if(activeImageIndex === 0) {
       prevClassNames.push(styles.hidden)
@@ -35,11 +43,11 @@ const ImageSlider = props => {
     }
 
     return <>
-        <button className={prevClassNames.join(' ')} onClick={() => setActiveImageIndex(prevIndex => prevIndex - 1)}>
+        <button className={prevClassNames.join(' ')} onClick={e => handleClick(e, -1)}>
           <i className="material-icons">navigate_before</i>
         </button>
 
-        <button className={nextClassNames.join(' ')} onClick={() => setActiveImageIndex(prevIndex => prevIndex + 1)}>
+        <button className={nextClassNames.join(' ')} onClick={e => handleClick(e, 1)}>
           <i className="material-icons">navigate_next</i>
         </button>
     </>;
@@ -49,6 +57,10 @@ const ImageSlider = props => {
     <div className={styles.imageSlider}>
       <img className={styles.image} src={images[activeImageIndex].src} alt={images[activeImageIndex].alt}/>
       { renderControls() }
+
+      <div className={styles.mobileControls}>
+        { renderControls(true) }
+      </div>
     </div>
   );
 };
