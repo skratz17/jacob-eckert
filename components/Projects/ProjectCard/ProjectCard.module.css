@@ -13,15 +13,18 @@
 }
 
 .projectCardName {
-  color: var(--action-color);
-  font-size: 2rem;
-  font-weight: bold;
   margin: 1rem 0;
+}
+
+.projectCardName > a {
+  font-size: 2rem;
+  color: var(--action-color);
+  font-weight: bold;
+  text-decoration: none;
 }
 
 .projectCardName:hover {
   text-decoration: underline;
-  cursor: pointer;
 }
 
 .projectCardDescription {

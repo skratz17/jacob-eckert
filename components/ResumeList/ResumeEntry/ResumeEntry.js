@@ -8,8 +8,18 @@ const ResumeEntry = props => {
 
   const [ isExpanded, setIsExpanded ] = useState(false);
 
+  const handleKeyUp = e => {
+    if(e.key === 'Enter') {
+      setIsExpanded(currentIsExpanded => !currentIsExpanded);
+    }
+  };
+
   return (
-    <li className={styles.resumeEntry} onClick={() => setIsExpanded(currentIsExpanded => !currentIsExpanded)}>
+    <li tabIndex="0"
+      className={styles.resumeEntry} 
+      onClick={() => setIsExpanded(currentIsExpanded => !currentIsExpanded)}
+      onKeyUp={handleKeyUp}
+    >
       <div className={styles.resumeEntryHeadingLine}>
         <h3 className={styles.resumeEntryHeading}>{position}</h3>
         <p className={styles.resumeEntryDates}>{start} - {end || 'present'}</p>
