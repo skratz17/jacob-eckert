@@ -20,7 +20,7 @@ const ProjectCard = props => {
     <div className={styles.projectCard}>
       <img className={styles.projectCardImage} src={mainImage.src} alt={mainImage.alt} />
       <h3 className={styles.projectCardName}>
-        <a tabIndex="0" 
+        <a href="#"
           onClick={e => handleProjectLinkClick(e, name)} 
           onKeyUp={e => handleKeyUp(e, name)}>
             {name}
