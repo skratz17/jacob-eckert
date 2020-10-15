@@ -23,7 +23,13 @@ const Modal = props => {
   return <>
     <Backdrop isShowing={isShowing} onClick={onClose} />
     <div className={`${styles.modal} ${isShowing ? styles.showing : ''}`}>
+      <button className={styles.closeButton} onClick={onClose}>
+        <i className="material-icons">highlight_off</i>
+      </button>
       { props.children }
+      <button className={styles.closeButtonMobile} onClick={onClose}>
+        Close Project
+      </button>
     </div>
   </>;
 };
