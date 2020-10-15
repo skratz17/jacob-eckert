@@ -6,6 +6,7 @@
 
 .projectName {
   font-size: 2rem;
+  text-align: center;
 }
 
 .description {
@@ -20,6 +21,8 @@
   width: 100%;
   display: flex;
   justify-content: space-evenly;
+  margin: 1rem 0;
+  margin-bottom: 0;
 }
 
 .links a {

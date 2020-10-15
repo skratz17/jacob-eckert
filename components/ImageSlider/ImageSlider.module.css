@@ -15,7 +15,7 @@
   visibility: visible;
 }
 
-.button.hidden {
+button.hidden {
   display: none;
 }
 
@@ -50,10 +50,37 @@
   right: 0;
 }
 
-@media(max-width: 768px) {
+.mobileControls {
+  display: none;
+}
+
+@media(max-width: 850px) {
+  .button {
+    display: none;
+  }
+
   .image {
     width: 400px;
     height: 270px;
+  }
+
+  .mobileControls {
+    display: block;
+    height: 42px;
+    width: 100%;
+    margin: 1rem 0;
+    position: relative;
+  }
+
+  .buttonMobile {
+    position: absolute;
+    top: 0;
+    border: 1px solid #000;
+    background-color: #fff;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    padding: 0.5rem;
   }
 }
 
