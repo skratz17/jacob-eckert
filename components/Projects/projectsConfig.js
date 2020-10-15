@@ -78,6 +78,8 @@ export default [
     features: [
       'Responsively designed, so that the site looks beautiful on any screen size.',
       'Site styles implemented from the ground up with Sass, then minified using cssnano for the production site, leading to speedy load times due to no reliance on an external CSS library and serving a minified CSS file.'
-    ]
+    ],
+    deployedLink: 'https://cynthiacheathamlaw.com/',
+    projectLink: 'https://github.com/skratz17/cynthia-cheatham-law'
   }
 ];
