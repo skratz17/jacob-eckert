@@ -1,3 +1,5 @@
+import ImageSlider from '../../ImageSlider/ImageSlider';
+
 const ProjectDetail = props => {
   const { project } = props;
 
