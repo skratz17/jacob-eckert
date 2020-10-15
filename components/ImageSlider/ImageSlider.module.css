@@ -2,8 +2,45 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  position: relative;
 }
 
 .image {
   width: 500px;
+}
+
+.imageSlider:hover .button {
+  opacity: 1;
+  visibility: visible;
+}
+
+.button {
+  position: absolute;
+  top: 50%;
+  z-index: 15;
+  cursor: pointer;
+  border: none;
+  background-color: #0006;
+  transform: translateY(-50%);
+  height: 100%;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.5s;
+}
+
+.button > i {
+  font-size: 4rem;
+  color: #fff;
+}
+
+.button:hover {
+  background-color: #0004;
+}
+
+.buttonPrev {
+  left: 0;
+}
+
+.buttonNext {
+  right: 0;
 }

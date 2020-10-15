@@ -11,11 +11,19 @@ const ImageSlider = props => {
     const controls = [];
     
     if(activeImageIndex !== 0) {
-      controls.push(<button onClick={() => setActiveImageIndex(prevIndex => prevIndex - 1)}>Prev</button>);
+      controls.push(
+        <button className={styles.button + ' ' + styles.buttonPrev} onClick={() => setActiveImageIndex(prevIndex => prevIndex - 1)}>
+          <i className="material-icons">navigate_before</i>
+        </button>
+      );
     }
     
     if(activeImageIndex !== images.length - 1) {
-      controls.push(<button onClick={() => setActiveImageIndex(prevIndex => prevIndex + 1)}>Next</button>);
+      controls.push(
+        <button className={styles.button + ' ' + styles.buttonNext} onClick={() => setActiveImageIndex(prevIndex => prevIndex + 1)}>
+          <i className="material-icons">navigate_next</i>
+        </button>
+      );
     }
 
     return controls;
@@ -24,9 +32,7 @@ const ImageSlider = props => {
   return (
     <div className={styles.imageSlider}>
       <img className={styles.image} src={images[activeImageIndex].src} alt={images[activeImageIndex].alt}/>
-      <div>
-        { renderControls() }
-      </div>
+      { renderControls() }
     </div>
   );
 };
