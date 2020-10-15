@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 
 import styles from './ImageSlider.module.css';
 
@@ -6,6 +6,21 @@ const ImageSlider = props => {
   const { images } = props;
 
   const [ activeImageIndex, setActiveImageIndex ] = useState(0);
+
+  useEffect(() => {
+    const handleKeyPress = e => {
+      if(e.key === 'ArrowRight' && activeImageIndex !== images.length - 1) {
+        setActiveImageIndex(prevIndex => prevIndex + 1);
+      }
+      else if(e.key === 'ArrowLeft' && activeImageIndex !== 0) {
+        setActiveImageIndex(prevIndex => prevIndex - 1);
+      }
+    };
+
+    document.addEventListener('keydown', handleKeyPress);
+
+    return () => document.removeEventListener('keydown', handleKeyPress);
+  }, [activeImageIndex]);
 
   const renderControls = () => {
     const prevClassNames = [ styles.button, styles.buttonPrev ];
