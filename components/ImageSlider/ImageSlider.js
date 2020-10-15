@@ -23,7 +23,7 @@ const ImageSlider = props => {
   }, [activeImageIndex]);
 
   const handleClick = (e, increment) => {
-    e.preventDefault();
+    e.preventDefault(); // to make quick tapping on phone not cause a zoom-in
     setActiveImageIndex(prevIndex => prevIndex + increment);
   };
 

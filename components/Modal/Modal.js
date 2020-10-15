@@ -28,7 +28,7 @@ const Modal = props => {
       </button>
       { props.children }
       <button className={styles.closeButtonMobile} onClick={onClose}>
-        Close Project
+        Close
       </button>
     </div>
   </>;
