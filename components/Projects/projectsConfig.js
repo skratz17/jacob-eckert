@@ -59,8 +59,25 @@ export default [
       {
         src: '/images/projects/cynthiaCheathamLaw/cynthiaCheathamLaw.png',
         alt: 'Cynthia Cheatham Law Website Home Page'
+      },
+      {
+        src: '/images/projects/cynthiaCheathamLaw/whoWeAre.png',
+        alt: 'Cynthia Cheatham Law Website Home Page'
+      },
+      {
+        src: '/images/projects/cynthiaCheathamLaw/contact.png',
+        alt: 'Cynthia Cheatham Law Website Contact Page'
+      },
+      {
+        src: '/images/projects/cynthiaCheathamLaw/mobile.png',
+        alt: 'Cynthia Cheatham Law Website Home Page (Mobile View)'
       }
     ],
-    shortDescription: 'Website for Nashville Family Law Attorney Cynthia Cheatham'
+    shortDescription: 'Website for Nashville Family Law Attorney Cynthia Cheatham',
+    description: 'I designed and implemented the static website for local Nashville family law attorney, Cynthia Cheatham. It was an excellent experience in implementing a project to meet a client\'s needs, and I learned a great deal about development driven by client feedback.',
+    features: [
+      'Responsively designed, so that the site looks beautiful on any screen size.',
+      'Site styles implemented from the ground up with Sass, then minified using cssnano for the production site, leading to speedy load times due to no reliance on an external CSS library and serving a minified CSS file.'
+    ]
   }
 ];
