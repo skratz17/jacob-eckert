@@ -21,6 +21,26 @@ export default [
       {
         src: '/images/projects/uhhhwut/dashboard.png',
         alt: 'Uhhh Wut Dashboard'
+      },
+      {
+        src: '/images/projects/uhhhwut/watchingVideo-ZH.png',
+        alt: 'Uhhh Wut Workshop Page (Chinese Internationalized Version)'
+      },
+      {
+        src: '/images/projects/uhhhwut/recordingTranscriptionRequest-ZH.png',
+        alt: 'Uhhh Wut Transcription Request Recording Process (Chinese Internationalized Version)'
+      },
+      {
+        src: '/images/projects/uhhhwut/confirmingTranscriptionRequest-ZH.png',
+        alt: 'Uhhh Wut Transcription Request Confirmation Process (Chinese Internationalized Version)'
+      },
+      {
+        src: '/images/projects/uhhhwut/transcribing-ZH.png',
+        alt: 'Uhhh Wut Transcription Process (Chinese Internationalized Version)'
+      },
+      {
+        src: '/images/projects/uhhhwut/dashboard-ZH.png',
+        alt: 'Uhhh Wut Dashboard (Chinese Internationalized Version)'
       }
     ],
     shortDescription: 'A YouTube Transcription Hub for Language Learners',
