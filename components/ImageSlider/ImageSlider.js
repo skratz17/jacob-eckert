@@ -1,5 +1,7 @@
 import { useState } from 'react';
 
+import styles from './ImageSlider.module.css';
+
 const ImageSlider = props => {
   const { images } = props;
 
@@ -15,11 +17,13 @@ const ImageSlider = props => {
     if(activeImageIndex !== images.length - 1) {
       controls.push(<button onClick={() => setActiveImageIndex(prevIndex => prevIndex + 1)}>Next</button>);
     }
+
+    return controls;
   };
 
   return (
-    <div>
-      <img src={images[activeImageIndex].src} alt={images[activeImageIndex].alt}/>
+    <div className={styles.imageSlider}>
+      <img className={styles.image} src={images[activeImageIndex].src} alt={images[activeImageIndex].alt}/>
       <div>
         { renderControls() }
       </div>

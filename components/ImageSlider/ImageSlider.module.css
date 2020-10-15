@@ -1,0 +1,9 @@
+.imageSlider {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.image {
+  width: 500px;
+}

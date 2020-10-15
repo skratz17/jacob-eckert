@@ -7,11 +7,12 @@ const ProjectDetail = props => {
     return null;
   }
 
-  const { name } = project;
+  const { name, images } = project;
 
   return (
     <div>
       {name}
+      <ImageSlider images={images} />
     </div>
   );
 };
