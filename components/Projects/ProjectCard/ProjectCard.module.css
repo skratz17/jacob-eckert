@@ -19,6 +19,11 @@
   margin: 1rem 0;
 }
 
+.projectCardName:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
 .projectCardDescription {
   font-size: 1.25rem;
 }

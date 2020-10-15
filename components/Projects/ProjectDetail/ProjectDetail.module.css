@@ -1,0 +1,46 @@
+.projectDetail {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.projectName {
+  font-size: 2rem;
+}
+
+.description {
+  margin: 1rem;
+}
+
+.features {
+  margin: 0 3rem;
+}
+
+.links {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.links a {
+  color: var(--action-color);
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.links a:hover {
+  text-decoration: underline;
+}
+
+@media(max-width: 500px) {
+  .links {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .links a {
+    margin: 0.5rem 0;
+  }
+}
