@@ -7,8 +7,8 @@ const Technologies = () => {
     <section className={styles.technologies + ' ' + utilStyles.section__light} id="technologies">
       <h2 className={utilStyles.sectionHeading}>Technologies</h2>
       <div className={styles.technologiesGrid}>
-        { TECHNOLOGIES.map(t => (
-          <div className={styles.technology}>
+        { TECHNOLOGIES.map((t, index) => (
+          <div key={index} className={styles.technology}>
             <img src={t.src} alt={t.name} />
             <div>
               <p>{t.name}</p>
