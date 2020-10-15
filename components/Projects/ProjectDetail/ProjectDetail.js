@@ -4,11 +4,6 @@ import styles from './ProjectDetail.module.css';
 
 const ProjectDetail = props => {
   const { project } = props;
-
-  if(project === null) {
-    return null;
-  }
-
   const { name, images, description, features, deployedLink, projectLink } = project;
 
   // prefetch all images for the selected project

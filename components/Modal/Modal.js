@@ -26,7 +26,7 @@ const Modal = props => {
       <button className={styles.closeButton} onClick={onClose}>
         <i className="material-icons">highlight_off</i>
       </button>
-      { props.children }
+      { isShowing && props.children }
       <button className={styles.closeButtonMobile} onClick={onClose}>
         Close
       </button>
