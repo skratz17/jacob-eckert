@@ -21,17 +21,17 @@ const ResumeEntry = props => {
       { isExpanded && 
         <ul className={styles.resumeEntryDetailsList}>
         {
-          details.map(d => {
-            if(typeof d === 'string') return <li>{d}</li>;
+          details.map((d, index) => {
+            if(typeof d === 'string') return <li key={index}>{d}</li>;
 
             return (
-              <>
+              <React.Fragment key={index}>
                 <li>{d.subheading}
                 <ul>
-                  {d.details.map(dd => <li>{dd}</li>)}
+                  {d.details.map((dd, dd_index) => <li key={dd_index}>{dd}</li>)}
                 </ul>
                 </li>
-              </>
+              </React.Fragment>
             )
           })
         }

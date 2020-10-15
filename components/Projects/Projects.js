@@ -19,7 +19,7 @@ const Projects = () => {
     <section className={styles.projects + ' ' + utilStyles.section__dark} id="projects">
       <h2 className={utilStyles.sectionHeading}>Projects</h2>
       <div className={styles.projectsGrid}>
-        { PROJECTS.map(p => <ProjectCard project={p} onSelect={handleProjectSelect} />) }
+        { PROJECTS.map((p, index) => <ProjectCard key={index} project={p} onSelect={handleProjectSelect} />) }
       </div>
     </section>
 

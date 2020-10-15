@@ -7,7 +7,7 @@ const ResumeList = props => {
   return (
     <ul className={styles.resumeList}>
       {
-        roles.map(r => <ResumeEntry role={r} />)
+        roles.map((r, index) => <ResumeEntry key={index} role={r} />)
       }
     </ul>
   )
