@@ -1,3 +1,4 @@
+import { useEffect } from 'react';
 import ImageSlider from '../../ImageSlider/ImageSlider';
 import styles from './ProjectDetail.module.css';
 
@@ -9,6 +10,14 @@ const ProjectDetail = props => {
   }
 
   const { name, images, description, features, deployedLink, projectLink } = project;
+
+  // prefetch all images for the selected project
+  useEffect(() => {
+    images.forEach(i => {
+      const image = new Image();
+      image.src = i.src;
+    });
+  }, []);
 
   return (
     <div className={styles.projectDetail}>
