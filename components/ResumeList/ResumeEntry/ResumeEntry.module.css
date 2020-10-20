@@ -4,8 +4,14 @@
   cursor: pointer;
 }
 
-.resumeEntry:hover {
+.resumeEntry:hover,
+.resumeEntry:focus {
   background-color: #fceedd;
+}
+
+.resumeEntry:focus {
+  outline: none;
+
 }
 
 .resumeEntryHeadingLine {
