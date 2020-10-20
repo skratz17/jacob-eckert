@@ -90,10 +90,6 @@
     display: none;
   }
 
-  .resumeEntry:hover {
-    background-color: transparent;
-  }
-
   .resumeEntryHeadingLine {
     flex-direction: column;
     justify-content: center;
