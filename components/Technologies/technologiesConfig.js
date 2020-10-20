@@ -20,6 +20,10 @@ export default [
     src: '/images/technologies/git.png'
   },
   {
+    name: 'SQLite',
+    src: '/images/technologies/sqlite.png'
+  },
+  {
     name: 'Node.js',
     src: '/images/technologies/node.png'
   },
