@@ -6,6 +6,8 @@ const App = ({ Component, pageProps }) => {
     <>
     <Head>
       <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+      <link rel="shortcut icon" href="favicon.ico" type="image/x-icon"/>
+      <link rel="apple-touch-icon" href="apple-touch-icon.png"/>
     </Head>
     <Component {...pageProps} />
     </>
