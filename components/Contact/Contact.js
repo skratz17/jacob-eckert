@@ -12,6 +12,11 @@ const EXTERNAL_LINKS = [
     href: 'https://github.com/skratz17/',
     src: '/images/contact/github.png', 
     alt: 'GitHub' 
+  },
+  {
+    href: 'https://soundcloud.com/koeeoaddithere',
+    src: '/images/contact/soundcloud.png',
+    alt: 'Soundcloud'
   }
 ];
 
