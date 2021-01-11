@@ -1,6 +1,46 @@
 export default [
+  // RATE MY MUSIC
   {
-    // UHHH WUT PROJECT
+    name: 'Rate My Music',
+    images: [
+      {
+        src: '/images/projects/rateMyMusic/landingPage.png',
+        alt: 'Rate My Music Landing Page'
+      },
+      {
+        src: '/images/projects/rateMyMusic/fullSearch.png',
+        alt: 'Rate My Music Home Page'
+      },
+      {
+        src: '/images/projects/rateMyMusic/artistPage.png',
+        alt: 'Rate My Music Artist Page'
+      },
+      {
+        src: '/images/projects/rateMyMusic/songPage.png',
+        alt: 'Rate My Music Song Page'
+      },
+      {
+        src: '/images/projects/rateMyMusic/theCharts.png',
+        alt: 'Rate My Music Charts'
+      },
+      {
+        src: '/images/projects/rateMyMusic/activePlayerAndQueue.png',
+        alt: 'Rate My Music Player and Queue'
+      }
+    ],
+    shortDescription: 'A One-Stop Site for Music Sharing and Exploration',
+    description: 'Rate My Music is a one-stop site for music creators and music lovers alike! If you want to get the music you make (or the music an artist you love makes!) out and into the world, Rate My Music is your answer. Or, if you just love exploring new music and want to check out what\'s out there, listen to new things, and get some new favorites, you\'ll find exactly what you\'re looking for at Rate My Music, as well!',
+    features: [
+      'Integration with YouTube, SoundCloud, Dailymotion, and Vimeo so users can listen to songs linked on those platforms at the click of a button.',
+      'Many different ways to explore new songs on the site, all of which function as in-browser playlists.',
+      'Full test suites written for the client app (using React Testing Library and Jest), and the server app (using Django\'s APITestCase).'
+    ],
+    deployedLink: 'https://ratemymusic.jacobweckert.com/',
+    projectLink: 'https://github.com/skratz17/rate-my-music-client'
+  },
+
+  // UHHH WUT PROJECT
+  {
     name: 'uhhh wut',
     images: [
       {
