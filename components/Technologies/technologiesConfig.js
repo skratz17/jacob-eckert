@@ -16,6 +16,14 @@ export default [
     src: '/images/technologies/react.png'
   },
   {
+    name: 'Python',
+    src: '/images/technologies/python.png'
+  },
+  {
+    name: 'Django',
+    src: '/images/technologies/django.png'
+  },
+  {
     name: 'Git',
     src: '/images/technologies/git.png'
   },
@@ -32,12 +40,12 @@ export default [
     src: '/images/technologies/java.png'
   },
   {
-    name: 'Sass (CSS Preprocessor)',
+    name: 'Sass',
     src: '/images/technologies/sass.png'
   },
   {
-    name: 'I18N (with react-intl)',
-    src: '/images/technologies/i18n.png'
+    name: 'Tailwind CSS',
+    src: '/images/technologies/tailwind.png'
   },
   {
     name: 'vi / vim',
