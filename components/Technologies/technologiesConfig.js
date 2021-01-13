@@ -16,6 +16,14 @@ export default [
     src: '/images/technologies/react.png'
   },
   {
+    name: 'React Testing Library',
+    src: '/images/technologies/reactTestingLibrary.png'
+  },
+  {
+    name: 'Jest',
+    src: '/images/technologies/jest.png'
+  },
+  {
     name: 'Python',
     src: '/images/technologies/python.png'
   },
