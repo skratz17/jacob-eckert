@@ -4,7 +4,7 @@ import utilStyles from '../../styles/utilities.module.css';
 const Footer = () => {
   return (
     <footer className={styles.footer + ' ' + utilStyles.section__light}>
-      <p>Copyright &copy; 2021 Jacob Eckert</p> 
+      <p>Copyright &copy; 2022 Jacob Eckert</p> 
       <p>All Rights Reserved</p>
     </footer>
   );

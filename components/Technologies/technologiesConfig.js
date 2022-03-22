@@ -12,6 +12,10 @@ export default [
     src: '/images/technologies/javascript.png'
   },
   {
+    name: 'TypeScript',
+    src: '/images/technologies/typescript.png'
+  },
+  {
     name: 'React.js',
     src: '/images/technologies/react.png'
   },
@@ -30,6 +34,14 @@ export default [
   {
     name: 'Django',
     src: '/images/technologies/django.png'
+  },
+  {
+    name: 'Ruby',
+    src: '/images/technologies/ruby.png'
+  },
+  {
+    name: 'AWS',
+    src: '/images/technologies/aws.png'
   },
   {
     name: 'Git',
