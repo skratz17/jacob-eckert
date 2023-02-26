@@ -23,7 +23,7 @@ const ProjectDetail = props => {
         { features.map((f, index) => <li key={index}>{f}</li>) }
       </ul>
       <div className={styles.links}>
-        <a href={deployedLink} target="_blank" rel="noopener noreferrer">Check it out!</a>
+        { deployedLink && <a href={deployedLink} target="_blank" rel="noopener noreferrer">Check it out!</a> }
         <a href={projectLink} target="_blank" rel="noopener noreferrer">GitHub Repo</a>
       </div>
     </div>

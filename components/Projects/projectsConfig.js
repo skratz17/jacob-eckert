@@ -85,13 +85,12 @@ export default [
       }
     ],
     shortDescription: 'A YouTube Transcription Hub for Language Learners',
-    description: 'uhhhwut is a single-page web application that crowdsources transcriptions of YouTube videos, and is targeted at learners of foreign languages who watch YouTube videos to immerse in their target language.',
+    description: 'uhhhwut is a single-page web application that crowdsources transcriptions of YouTube videos, and is targeted at learners of foreign languages who watch YouTube videos to immerse in their target language. NOTE: uhhwut is no longer being maintained and is no longer live on the Internet.',
     features: [
       'Single-page application built using modern, hook-based React.js.',
       'Built with internationalization / I18N in mind - can be easily translated into any arbitrary language with the help of react-intl.',
       'Responsively designed, so that the site can be easily used on any screen size.'
     ],
-    deployedLink: 'https://uhhhwut.onrender.com/',
     projectLink: 'https://github.com/skratz17/uhhhwut'
   },
 
