@@ -1,12 +1,11 @@
 export default [
   {
-    position: 'System Development Engineer',
+    position: 'System Development Engineer II',
     organization: 'Amazon',
     location: 'Nashville, TN',
     start: '2021',
     details: [
-      'Own and maintain multiple applications supporting operations across several businesses in Amazon\'s Gloabl Specialty Fulfillment organization. Work both as a single-threaded owner of applications as well as in small development teams, and collaborate with customers and stakeholders to deliver high-quality projects that help automate daily operational tasks.',
-      'Worked alongside another developer to create a new full-stack web application for centralized warehouse flow management and shift planning, currently in use for daily operations at over 60 Amazon Fresh warehouses. By automating a previously manual Excel-based process, the tool significantly reduces operator time spent in generating plans, and its web-native implementation enabled us to create data flows for analytics and reporting in an area the business previously had no visibility.',
+      'Designed, implemented, and iterated on a full-stack web application for centralized warehouse flow management and shift planning, currently in use for daily operations at all Amazon Fresh warehouses in North America. The tool significantly reduces user time spent in generating plans by automatically ingesting data from other teams’ systems, improves plan accuracy by greatly expanding on the logic initially implemented in the Excel tool from which it was derived, and automatically pushes its data to a data lake, enabling the business to carry out extensive analytics and reporting in an area the business previously had no visibility.',
       'Created a new full-stack web application for rest and meal break schedule optimization, allowing users to configure site-specific break policy rules and automatically generate staggered break schedules adherent to policy for all associates on shift at the site each day.',
       'Maintained a legacy web application used for route dispatch decision-making at all Sub-Same Day warehouses. Implemented improvements that reduced initial load time by up to 25 seconds and cut down on paper printed from the app.'
     ]
