@@ -4,6 +4,7 @@ export default [
     organization: 'Nashville Software School',
     location: 'Nashville, TN',
     start: '2020',
+    end: '2021',
     details: [
       'Intensive full-time 6-month software development bootcamp centered around modern, full-stack web development. Heavily project-focused, with the majority of the curriculum based around both individual and team-based projects.',
       {
