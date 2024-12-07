@@ -1,6 +1,6 @@
 export default [
   {
-    position: 'System Development Engineer II',
+    position: 'Software Development Engineer II',
     organization: 'Amazon',
     location: 'Nashville, TN',
     start: '2021',

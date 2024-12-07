@@ -33,13 +33,6 @@ const Contact = () => {
       </div>
 
       <div className={styles.contactMethod}>
-        <CircleIcon src="/images/contact/phone.png"
-          alt="Phone"
-          width="80" />
-        <a href="tel:+16156719140">(615) 671-9140</a>
-      </div>
-
-      <div className={styles.contactMethod}>
         <CircleIcon src="/images/contact/address.png"
           alt="Location"
           width="80" />
