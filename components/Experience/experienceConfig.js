@@ -5,9 +5,14 @@ export default [
     location: 'Nashville, TN',
     start: '2021',
     details: [
-      'Designed, implemented, and iterated on a full-stack web application for centralized warehouse flow management and shift planning, currently in use for daily operations at all Amazon Fresh warehouses in North America. The tool significantly reduces user time spent in generating plans by automatically ingesting data from other teams’ systems, improves plan accuracy by greatly expanding on the logic initially implemented in the Excel tool from which it was derived, and automatically pushes its data to a data lake, enabling the business to carry out extensive analytics and reporting in an area the business previously had no visibility.',
-      'Created a new full-stack web application for rest and meal break schedule optimization, allowing users to configure site-specific break policy rules and automatically generate staggered break schedules adherent to policy for all associates on shift at the site each day.',
-      'Maintained a legacy web application used for route dispatch decision-making at all Sub-Same Day warehouses. Implemented improvements that reduced initial load time by up to 25 seconds and cut down on paper printed from the app.'
+      "Full-stack software engineer in Amazon's Last Mile Tech organization, collaborating with business, product, and engineering partners to build scalable full-stack web applications and backend services across numerous businesses.",
+      "Maintain a Ruby/Sinatra-based capacity management service, improving modularity, testability, and scalability of existing code, and implementing new functionality to support major Sub-Same Day initiatives.",
+      "Designing and building a new Java service to standardize capacity deployment across Last Mile Tech businesses while resolving core pain points with existing systems.",
+      "Support operations by participating in an on-call rotation, diagnosing and resolving urgent business-impacting issues in collaboration with partner teams.",
+      "Designed and developed a React + TypeScript frontend for a data repository service, enabling business partners to upload and manage Excel/CSV datasets for planning systems.",
+      "Expanded Amazon's Sub-Same Day volume planning service by implementing logic to support new business offerings (e.g., pharmacy) within an AWS Lambda-based microservice architecture.",
+      "Led the migration of a large JavaScript frontend to TypeScript, enabling type-safe development and accelerating the engineering workflow.",
+      "Maintain numerous legacy web applications, ensuring continued functionality and implementing software/security updates to comply with Amazon's internal standards.",
     ]
   },
 

@@ -1,4 +1,52 @@
 export default [
+  // ADVENT OF CODE
+  {
+    name: 'Advent of Code 2024',
+    images: [
+      {
+        src: '/images/projects/adventOfCode/merryChristmas.png',
+        alt: 'A Christmas tree rendered in Terminal from an Advent of Code challenge'
+      }
+    ],
+    shortDescription: 'My solutions for the 2024 Advent of Code coding challenge',
+    description: 'I am a lover of puzzles, having been a daily NYT crossworder for years. I find that the coding challenges in Advent of Code scratch a similar itch, while also expanding my coding skills, and can\'t wait to see what 2025 has in store!',
+    features: [
+      'See my TypeScript solutions for all 25 days of coding challenges.',
+    ],
+    projectLink: 'https://github.com/skratz17/advent-2024'
+  },
+
+  // CYNTHIA CHEATHAM LAW PROJECT
+  {
+    name: 'Cynthia Cheatham Law',
+    images: [
+      {
+        src: '/images/projects/cynthiaCheathamLaw/cynthiaCheathamLaw.png',
+        alt: 'Cynthia Cheatham Law Website Home Page'
+      },
+      {
+        src: '/images/projects/cynthiaCheathamLaw/whoWeAre.png',
+        alt: 'Cynthia Cheatham Law Website Home Page'
+      },
+      {
+        src: '/images/projects/cynthiaCheathamLaw/contact.png',
+        alt: 'Cynthia Cheatham Law Website Contact Page'
+      },
+      {
+        src: '/images/projects/cynthiaCheathamLaw/mobile.png',
+        alt: 'Cynthia Cheatham Law Website Home Page (Mobile View)'
+      }
+    ],
+    shortDescription: 'Website for Nashville Family Law Attorney Cynthia Cheatham',
+    description: 'I designed and implemented the static website for local Nashville family law attorney, Cynthia Cheatham. It was an excellent experience in implementing a project to meet a client\'s needs, and I learned a great deal about development driven by client feedback.',
+    features: [
+      'Responsively designed, so that the site looks beautiful on any screen size.',
+      'Built with Next.js to provide the speedy client-side navigation of a SPA with the quick initial load and SEO benefits of a server-rendered application.'
+    ],
+    deployedLink: 'https://cynthiacheathamlaw.com/',
+    projectLink: 'https://github.com/skratz17/cynthia-cheatham-law-next'
+  },
+
   // RATE MY MUSIC
   {
     name: 'Rate My Music',
@@ -35,7 +83,6 @@ export default [
       'Many different ways to explore new songs on the site, all of which function as in-browser playlists.',
       'Full test suites written for the client app (using React Testing Library and Jest), and the server app (using Django\'s APITestCase).'
     ],
-    deployedLink: 'https://ratemymusic.jacobweckert.com/',
     projectLink: 'https://github.com/skratz17/rate-my-music-client'
   },
 
@@ -93,35 +140,4 @@ export default [
     ],
     projectLink: 'https://github.com/skratz17/uhhhwut'
   },
-
-  // CYNTHIA CHEATHAM LAW PROJECT
-  {
-    name: 'Cynthia Cheatham Law',
-    images: [
-      {
-        src: '/images/projects/cynthiaCheathamLaw/cynthiaCheathamLaw.png',
-        alt: 'Cynthia Cheatham Law Website Home Page'
-      },
-      {
-        src: '/images/projects/cynthiaCheathamLaw/whoWeAre.png',
-        alt: 'Cynthia Cheatham Law Website Home Page'
-      },
-      {
-        src: '/images/projects/cynthiaCheathamLaw/contact.png',
-        alt: 'Cynthia Cheatham Law Website Contact Page'
-      },
-      {
-        src: '/images/projects/cynthiaCheathamLaw/mobile.png',
-        alt: 'Cynthia Cheatham Law Website Home Page (Mobile View)'
-      }
-    ],
-    shortDescription: 'Website for Nashville Family Law Attorney Cynthia Cheatham',
-    description: 'I designed and implemented the static website for local Nashville family law attorney, Cynthia Cheatham. It was an excellent experience in implementing a project to meet a client\'s needs, and I learned a great deal about development driven by client feedback.',
-    features: [
-      'Responsively designed, so that the site looks beautiful on any screen size.',
-      'Site styles implemented from the ground up with Sass, then minified using cssnano for the production site, leading to speedy load times due to no reliance on an external CSS library and serving a minified CSS file.'
-    ],
-    deployedLink: 'https://cynthiacheathamlaw.com/',
-    projectLink: 'https://github.com/skratz17/cynthia-cheatham-law'
-  }
 ];
